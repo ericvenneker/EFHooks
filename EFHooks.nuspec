@@ -14,13 +14,13 @@
       This is based on Kevin McKelvin's EFHooks project, but has additional features (added by Visoft), like the ability to use the existing data context within a hook.
       Metadata validation upon saving is enabled too.
     </summary>
-    <copyright>Copyright 2015</copyright>
-    <tags>EF EntityFramework Entity Framework Hooks SaveChanges Metadata validation</tags>
+    <copyright>Copyright 2021</copyright>
+    <tags>EF Core EntityFramework Entity Framework Hooks SaveChanges Metadata validation</tags>
     <dependencies>
       <dependency id="EntityFramework" version="6.3.0" />
     </dependencies>
     <releaseNotes>
-      Fixes: https://github.com/Atrejoe/EFHooks/pull/4# : Overload constructor `HookedDbContext(hooks, existingConnection, contextOwnsConnection)` does not instantiate hooks.
+			Conversion to .Net Standard 2.0/EF6.3
     </releaseNotes>
   </metadata>
   <files>
@@ -28,5 +28,7 @@
     <file src="lib\net40\EFHooks.xml" target="lib\net40\EFHooks.xml" />
     <file src="lib\net45\EFHooks.dll" target="lib\net45\EFHooks.dll" />
     <file src="lib\net45\EFHooks.xml" target="lib\net45\EFHooks.xml" />
+    <file src="lib\netstandard21\EFHooks.dll" target="lib\netstandard21\EFHooks.dll" />
+    <file src="lib\netstandard21\EFHooks.xml" target="lib\netstandard21\EFHooks.xml" />
   </files>
 </package>
