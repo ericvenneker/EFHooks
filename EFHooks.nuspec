@@ -17,7 +17,7 @@
     <copyright>Copyright 2015</copyright>
     <tags>EF EntityFramework Entity Framework Hooks SaveChanges Metadata validation</tags>
     <dependencies>
-      <dependency id="EntityFramework" version="6.1.0" />
+      <dependency id="EntityFramework" version="6.3.0" />
     </dependencies>
     <releaseNotes>
       Fixes: https://github.com/Atrejoe/EFHooks/pull/4# : Overload constructor `HookedDbContext(hooks, existingConnection, contextOwnsConnection)` does not instantiate hooks.
