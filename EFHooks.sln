@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFHooks", "EFHooks\EFHooks.csproj", "{5F31DE6C-B0FE-4BD2-BBB0-A62F2E625145}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFHooks", "EFHooks\EFHooks.csproj", "{5F31DE6C-B0FE-4BD2-BBB0-A62F2E625145}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{01E37805-9920-4B4E-ADAF-53544B6DBA62}"
 	ProjectSection(SolutionItems) = preProject
@@ -14,11 +14,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.markdown = README.markdown
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFHooks.Tests", "EFHooks.Tests\EFHooks.Tests.csproj", "{6A0FBB1F-D953-4973-8D7A-D2654F0A2CA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFHooks.Tests", "EFHooks.Tests\EFHooks.Tests.csproj", "{6A0FBB1F-D953-4973-8D7A-D2654F0A2CA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFHooks.NET45", "EFHooks.NET45\EFHooks.NET45.csproj", "{A06C0D39-588B-4F1D-8F4B-A9BAC5930E5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFHooks.NET45", "EFHooks.NET45\EFHooks.NET45.csproj", "{A06C0D39-588B-4F1D-8F4B-A9BAC5930E5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFHooks.Tests.NET45", "EFHooks.Tests.NET45\EFHooks.Tests.NET45.csproj", "{D9C0300F-4E3A-4A79-9E1B-236224B013E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFHooks.Tests.NET45", "EFHooks.Tests.NET45\EFHooks.Tests.NET45.csproj", "{D9C0300F-4E3A-4A79-9E1B-236224B013E7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{93440D29-C906-4217-A871-CFF9F504051D}"
 	ProjectSection(SolutionItems) = preProject
@@ -26,6 +26,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{93440D
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFHooks.NETSTANDARD21", "EFHooks.NETSTANDARD21\EFHooks.NETSTANDARD21.csproj", "{40FE399A-B8E1-4106-9673-647157D28499}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFHooks.Tests.NETSTANDARD21", "EFHooks.Tests.NETSTANDARD21\EFHooks.Tests.NETSTANDARD21.csproj", "{D3230DA2-BF5F-45AD-B192-EE5458A78939}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,8 +53,19 @@ Global
 		{D9C0300F-4E3A-4A79-9E1B-236224B013E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9C0300F-4E3A-4A79-9E1B-236224B013E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9C0300F-4E3A-4A79-9E1B-236224B013E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40FE399A-B8E1-4106-9673-647157D28499}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40FE399A-B8E1-4106-9673-647157D28499}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40FE399A-B8E1-4106-9673-647157D28499}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40FE399A-B8E1-4106-9673-647157D28499}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3230DA2-BF5F-45AD-B192-EE5458A78939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3230DA2-BF5F-45AD-B192-EE5458A78939}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3230DA2-BF5F-45AD-B192-EE5458A78939}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3230DA2-BF5F-45AD-B192-EE5458A78939}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {148BC1FE-CA5F-45FC-98F3-5B2DED782F5A}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard21</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <RootNamespace>EFHooks</RootNamespace>
+    <AssemblyName>EFHooks</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\EFHooks\EFHooks.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\lib\</OutputPath>
+    <DocumentationFile>..\lib\netstandard21\EFHooks.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\EFHooks\*.cs" />
+    <Compile Include="..\EFHooks.NET45\*.cs" />
+    <Compile Include="..\EFHooks\Properties\Constants.cs" />
+  </ItemGroup>
+
+</Project>

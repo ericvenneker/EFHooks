@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp31</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <RootNamespace>EFHooks.Tests</RootNamespace>
+    <Platform>x86</Platform>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EFHooks.NETSTANDARD21\EFHooks.NETSTANDARD21.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\EFHooks.Tests\Hooks\*.cs" />
+    <Compile Include="..\EFHooks.Tests.NET45\*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Effort.EF6" Version="2.2.14" />
+    <PackageReference Include="FakeItEasy" Version="7.2.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+    <PackageReference Include="NUnit" Version="3.13.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.0.0" />
+  </ItemGroup>
+
+</Project>
