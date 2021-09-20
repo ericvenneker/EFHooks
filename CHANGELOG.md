@@ -52,3 +52,9 @@
 ## 2.3.1.0
 
 * Fixes: https://github.com/Atrejoe/EFHooks/pull/4# by George Mauer (@togakangaroo): Overload constructor `HookedDbContext(hooks, existingConnection, contextOwnsConnection)` does not instantiate hooks.
+
+## 2.4.0.0
+
+* Added an .NET Standard 2.1 version of EFHooks.
+* **Breaking Changes**
+* Upgraded Entity Framework to v6.3.0 - required to be able to target .NET Standard 2.1
