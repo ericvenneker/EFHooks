@@ -23,3 +23,6 @@ packages/*/
 /lib/net45/EntityFramework.xml
 *.nupkg_published
 .vs/EFHooks/v16/TestStore/
+lib/netstandard21/
+lib/net40/
+lib/net45/
