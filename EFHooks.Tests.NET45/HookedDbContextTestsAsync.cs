@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Threading.Tasks;
+
 using EFHooks.Tests.Hooks;
 using NUnit.Framework;
 
@@ -7,7 +9,7 @@ namespace EFHooks.Tests
     partial class HookedDbContextTests
     {
         [Test]
-        public async void HookedDbContext_MustCallHooks_WhenRunningSaveChangesAsync()
+        public async Task HookedDbContext_MustCallHooks_WhenRunningSaveChangesAsync()
         {
             var hooks = new IHook[]
                             {
