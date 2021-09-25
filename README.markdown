@@ -4,7 +4,13 @@ EFHooks is a framework to assist in hooking into the Entity Framework Code First
 
 EFHooks is designed to lend itself to code that is easy to unit test with the least amount of mocking possible and without cluttering up your DbContext class with hooking code.  It also is designed to play well with IoC containers.
 
-Getting Started:
+**V2.4 .NET Standard compatibility:**
+
+You can now use this library to slowly move your existing code from .NET Framework 4 to .NET Core 3 with EF Classic
+
+If you need to keep working with .NET Framework but want to move to EF Core , you can go to https://github.com/ericvenneker/EFHooks.EFCore. That library contains a .NET Standard 2.0 version with EF Core 3.1
+
+**Getting Started:**
 
 Define a hook to fire before an action by deriving from one of the strongly typed hook classes: `PreInsertHook<TEntity>`, `PreUpdateHook<TEntity>` or `PreDeleteHook<TEntity>` and override the `Hook` method. (There are also Post-Action hooks)
 
